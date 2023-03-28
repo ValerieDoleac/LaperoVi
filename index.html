@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'apéro Vi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="image/style.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <head>
+
+    <title>L'apéro Vi</title>
+</head>
+<body>
+  <!-- Ma barre de navigation-->
+
+    <nav class="navbar">
+            <img src="image/logo.jpg" alt="LaperoVi logo" class="logoImage">
+
+                <ul class="nav-links">
+                    <li><a href="#accueil">ACCUEIL</a></li>
+                    <li><a href="#lapero">L'APERO</a></li>
+                    <li><a href="#accompagnements">ACCOMPAGNEMENTS</a></li>
+                    <li><a href="#desserts">DESSERTS</a></li>
+                    <li><a href="#boissons">BOISSONS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    
+                </ul>
+                <img src="image/menu.png" alt="menu hamburger" class="menu">
+
+                <!-- Menu hamburger en JS-->
+                    <script>
+                        const menuHamburger = document.querySelector(".menu")
+                        const navLinks = document.querySelector(".nav-links")
+                
+                        menuHamburger.addEventListener('clic',()=>{
+                        navLinks.classList.toggle('mobile-menu')
+                        })
+                    </script>
+            
+    </nav>
+    <header>
+
+      <!-- Ma page d'accueil-->
+
+        <div class="section1">
+            <div class="presentation">
+                <h1>L'apéro Vi est là !!!</h1>
+                <p>Des invités qui arrivent à l'improviste, <br> Un moment de fête ou de détente en famille ou entre amis, <br> L'apéro Vi s'occupe de tout !!!</p>
+            </div>
+
+            <!-- Carroussel Bootstrap-->
+
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner mt-5">
+                <div class="carousel-item active">
+                  <img src="image/aperosVi1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="image/aperosVi2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="image/aperosVi3.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+  
+        </div>
+    </header>
+
+        <section id="lapero" class="lapero">
+          <h2 class="titre">L'APERO</h2> 
+              <div class="article">
+                <img src="image/rougeLesCharmillesLapero.jpg" alt="vin rouge">
+                <div class="info">
+                  <h3>Château les Charmilles 2021</h3>
+                  <hr>
+                  <p>Souple et élégant, accompagne le fromage et la charcuterie à merveille</p>
+                  <p class="prix">12.00 </p>
+                </div>
+              </div>
+
+
+              <div class="article">
+                <img src="image/roseCapriceDeGrisLapero.jpg" alt="vin rose">
+                <div class="info">
+                  <h3>Rosé Caprice de Gris</h3>
+                  <hr>
+                  <p>brutbrutbrut</p>
+                  <p class="prix">11.00</p>
+                </div>
+              </div>
+
+
+              <div class="article">
+                <img src="image/LaperoVi27.jpg" alt="vin blanc">
+                <div class="info">
+                  <h3>Vin blanc Les petites Baies</h3>
+                  <hr>
+                  <p>Arômes de fruits exotique, dagrume et de fleurs blanches, accompagne les salades composées et produits de la mer</p>
+                  <p class="prix">10.00 </p>
+                </div>
+              </div>
+
+        </section>
+
+        <section id="accompagnements" class="accompagnements">
+          <h2 class="titre">ACCOMPAGNEMENTS</h2>
+          <div class="article">
+            <img src="image/chikenWingwLapero.jpg" alt="wing">
+            <div class="info">
+              <h3>Wings</h3>
+              <hr>
+              <p class="prix">Les 6: 8.50</p>
+              <p class="prix">Les 12 : 14.50</p>
+              
+            </div>
+          </div>
+
+
+          <div class="article">
+            <img src="image/chikenNuggetLaperoVi.jpg" alt="nugget">
+            <div class="info">
+              <h3>Nuggets</h3>
+              <hr>
+              <p class="prix">Les 10: 6.90</p>
+              <p class="prix">Les 20: 12.90</p>
+            </div>
+          </div>
+
+
+          <div class="article">
+            <img src="image/beignetAubergineLaperoVi.jpg" alt="beignet aubergine">
+            <div class="info">
+              <h3>Bouchées d'aubergine et olive noir</h3>
+              <hr>
+              <p class="prix">Les 10: 6.90 </p>
+              <p class="prix">Les 20: 12.90 </p>
+            </div>
+          </div>
+        </section>
+
+
+        <section id="desserts" class="desserts">
+          <h2 class="titre">DESSERTS</h2>
+          <div class="article">
+            <img src="image/tiramisuLaperoVi.jpg" alt="tiramisu">
+            <div class="info">
+              <h3>Tiramisu</h3>
+              <hr>
+              <p>Servi dans un verre</p>
+              <p class="prix">3.50</p>
+              
+            </div>
+          </div>
+
+
+          <div class="article">
+            <img src="image/tarteDaimLaperoVi.jpg" alt="tarte daim">
+            <div class="info">
+              <h3>Tarte au daim</h3>
+              <hr>
+              <p class="prix">3.50</p>
+            </div>
+          </div>
+
+
+          <div class="article">
+            <img src="image/maccaronLaperoVi1.jpg" alt="maccaron">
+            <div class="info">
+              <h3>Macarons</h3>
+              <hr>
+              <p>Macarons parfum pistache, citron, café, chocolat, fraise et vanille</p>
+              <p class="prix">Les 4: 5.50 </p>
+              <p class="prix">Les 8: 10.50 </p>
+            </div>
+          </div>
+        </section>
+
+
+        <section id="boissons" class="boissons">
+          <h2 class="titre">BOISSONS</h2>
+          <div class="article">
+            <img src="image/oranginaLapero.jpg" alt="orangina">
+            <div class="info">
+              <h3>Orangina</h3>
+              <hr>
+              <p>33 cl</p>
+              <p class="prix">2.00</p>
+              
+            </div>
+          </div>
+
+
+          <div class="article">
+            <img src="image/iceTeaLapero.jpg" alt="icetea">
+            <div class="info">
+              <h3>Lipton Ice Tea</h3>
+              <hr>
+              <p>Saveur pêche 33 cl</p>
+              <p class="prix">2.00</p>
+            </div>
+          </div>
+
+
+          <div class="article">
+            <img src="image/cocaLapero.jpg" alt="cocacola">
+            <div class="info">
+              <h3>Coca Cola</h3>
+              <hr>
+              <p>33 cl</p>
+              <p class="prix">2.00 </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="contact">
+          <div class="bloc">
+            <h2 class="titre">CONTACT</h2>
+            <div class="itineraire">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d181.1100457737773!2d6.772224805359522!3d43.42382557525019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ce97936bc9d905%3A0x6e003e1f685b6ea4!2s86%20Bd%20Georges%20Clemenceau%2C%2083700%20Saint-Rapha%C3%ABl!5e0!3m2!1sfr!2sfr!4v1678132857337!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="coordonnees">
+              <h3>A EMPORTER</h3>
+              <hr>
+              <p>- 06 64 93 90 41</p>
+              <p>- 86 Boulevard Georges Clémenceau</p>
+              <p>  83700 SAINT RAPHAEL</p>
+              <h3>EN LIVRAISON</h3>
+              <hr>
+              <p>- Uber Eat</p>
+            </div>
+          </div>
+
+        </section>
+
+<footer>
+  
+    <div class="phrase">
+        <h6 class="attention">Alcool interdit au - de 18 ans / Livraison minimum de 20 euros. Paiement en espéce</h6>
+      </div>
+  <section id="footer">
+    <div class="blocfooter">
+      <h3>Suivez-nous</h3>
+      <ul class="listereseau">     
+        <li><a href="#"><img src="image/facebook.png" alt="iconesfacebook">Facebook</a></li>
+        <li><a href="#"><img src="image/instagram.png" alt="iconeinsta">Instagram</a></li>
+      </ul>
+    </div>
+    <div class="blocfooter">
+      <h3>Nous contacter</h3>
+      <p>06 59 60 89 61</p>
+      <p>86 Boulevard Georges Clémenceau</p>
+      <p>83700 SAINT RAPHAEL</p>
+      <p>aperovi83@gmail.com</p>
+    </div>
+    <div class="blocfooter">
+      <div class="politique">
+        <h3><a href="#"><img src="image/politique.png" alt="">Politique de confidentialités</a></h3>
+      </div>
+    </div>
+  </section>
+</footer>
+
+
+
+  
+    
+
+    <script src="js\bootstrap.bundle.min.js"></script>
+</body>
+</html>
