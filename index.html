@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L'apéro Vi</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="politique.html">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="image/style.js">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,16 +35,6 @@
                     
                 </ul>
                 <img src="image/menu.png" alt="menu hamburger" class="menu">
-
-                <!-- Menu hamburger en JS-->
-                    <script>
-                        const menuHamburger = document.querySelector(".menu")
-                        const navLinks = document.querySelector(".nav-links")
-                
-                        menuHamburger.addEventListener('clic',()=>{
-                        navLinks.classList.toggle('mobile-menu')
-                        })
-                    </script>
             
     </nav>
     <header>
@@ -86,7 +77,7 @@
         <section id="lapero" class="lapero">
           <h2 class="titre">L'APERO</h2> 
               <div class="article">
-                <img src="image/rougeLesCharmillesLapero.jpg" alt="vin rouge">
+                <img src="image/rougeLesCharmillesLapero.jpg" alt="vin rouge" class="bouteille">
                 <div class="info">
                   <h3>Château les Charmilles 2021</h3>
                   <hr>
@@ -97,7 +88,7 @@
 
 
               <div class="article">
-                <img src="image/roseCapriceDeGrisLapero.jpg" alt="vin rose">
+                <img src="image/roseCapriceDeGrisLapero.jpg" alt="vin rose" class="bouteille">
                 <div class="info">
                   <h3>Rosé Caprice de Gris</h3>
                   <hr>
@@ -108,7 +99,7 @@
 
 
               <div class="article">
-                <img src="image/LaperoVi27.jpg" alt="vin blanc">
+                <img src="image/LaperoVi27.jpg" alt="vin blanc" class="bouteille">
                 <div class="info">
                   <h3>Vin blanc Les petites Baies</h3>
                   <hr>
@@ -196,7 +187,7 @@
         <section id="boissons" class="boissons">
           <h2 class="titre">BOISSONS</h2>
           <div class="article">
-            <img src="image/oranginaLapero.jpg" alt="orangina">
+            <img src="image/oranginaLapero.jpg" alt="orangina" class="bouteille">
             <div class="info">
               <h3>Orangina</h3>
               <hr>
@@ -208,7 +199,7 @@
 
 
           <div class="article">
-            <img src="image/iceTeaLapero.jpg" alt="icetea">
+            <img src="image/iceTeaLapero.jpg" alt="icetea" class="bouteille">
             <div class="info">
               <h3>Lipton Ice Tea</h3>
               <hr>
@@ -219,7 +210,7 @@
 
 
           <div class="article">
-            <img src="image/cocaLapero.jpg" alt="cocacola">
+            <img src="image/cocaLapero.jpg" alt="cocacola" class="bouteille">
             <div class="info">
               <h3>Coca Cola</h3>
               <hr>
@@ -230,8 +221,8 @@
         </section>
 
         <section id="contact" class="contact">
+          <h2 class="titre">CONTACT</h2>
           <div class="bloc">
-            <h2 class="titre">CONTACT</h2>
             <div class="itineraire">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d181.1100457737773!2d6.772224805359522!3d43.42382557525019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ce97936bc9d905%3A0x6e003e1f685b6ea4!2s86%20Bd%20Georges%20Clemenceau%2C%2083700%20Saint-Rapha%C3%ABl!5e0!3m2!1sfr!2sfr!4v1678132857337!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
@@ -250,6 +241,32 @@
 
         </section>
 
+
+<!--
+
+  <section id="contact" class="contact">
+          <div class="bloc">
+            <h2 class="titre">CONTACT</h2>
+            <div class="itineraire">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d181.1100457737773!2d6.772224805359522!3d43.42382557525019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12ce97936bc9d905%3A0x6e003e1f685b6ea4!2s86%20Bd%20Georges%20Clemenceau%2C%2083700%20Saint-Rapha%C3%ABl!5e0!3m2!1sfr!2sfr!4v1678132857337!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+          <div class="bloc">
+            <div class="coordonnees">
+              <h3>A EMPORTER</h3>
+              <hr>
+              <p>- 06 64 93 90 41</p>
+              <p>- 86 Boulevard Georges Clémenceau</p>
+              <p>  83700 SAINT RAPHAEL</p>
+              <h3>EN LIVRAISON</h3>
+              <hr>
+              <p>- Uber Eat</p>
+            </div>
+          </div>
+        </section>
+-->
+
+
 <footer>
   
     <div class="phrase">
@@ -259,20 +276,20 @@
     <div class="blocfooter">
       <h3>Suivez-nous</h3>
       <ul class="listereseau">     
-        <li><a href="#"><img src="image/facebook.png" alt="iconesfacebook">Facebook</a></li>
-        <li><a href="#"><img src="image/instagram.png" alt="iconeinsta">Instagram</a></li>
+        <li><a href="#"><img class="reseau" src="image/facebook.png" alt="iconesfacebook">Facebook</a></li>
+        <li><a href="#"><img class="reseau" src="image/instagram.png" alt="iconeinsta">Instagram</a></li>
       </ul>
     </div>
     <div class="blocfooter">
       <h3>Nous contacter</h3>
-      <p>06 59 60 89 61</p>
+      <p>06 64 93 90 41</p>
       <p>86 Boulevard Georges Clémenceau</p>
       <p>83700 SAINT RAPHAEL</p>
       <p>aperovi83@gmail.com</p>
     </div>
     <div class="blocfooter">
       <div class="politique">
-        <h3><a href="#"><img src="image/politique.png" alt="">Politique de confidentialités</a></h3>
+        <h3><a href="politique.html" class="politique"><img src="image/politique.png" alt="">Politique de confidentialités</a></h3>
       </div>
     </div>
   </section>
@@ -282,7 +299,7 @@
 
   
     
-
+  <script src="style.js"></script>
     <script src="js\bootstrap.bundle.min.js"></script>
 </body>
 </html>

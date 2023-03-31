@@ -17,9 +17,12 @@ header{
 }
 
 .navbar{
+    position: fixed !important; 
+    z-index: 2;
     display: flex;
     justify-content: space-between;
     background-color: #000000;
+    width: 100%;
 }
 
 .logoImage{
@@ -41,7 +44,7 @@ li a{
     color: #d2b03d;
     font-family: inter 700 ,sans-serif;
     padding: 40px;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
 li a:hover{
@@ -54,6 +57,7 @@ li a:hover{
     display: flex;
     justify-content: space-between;
     margin-top: 0;
+    padding-top: 80px;
 }
 
 .presentation{
@@ -85,11 +89,16 @@ li a:hover{
     margin-left: 50px;
 }
 
-
-.caroussel{
-    margin-left: 40px;
+.presentation .caroussel{
+    margin-left: 50px;
     margin-right: 50px;
 }
+
+.caroussel{
+    margin-left: 30px;
+    margin-right: 50px;
+}
+
 #carouselExampleControls{
     width: 40%;
     margin-right: 70px;
@@ -103,6 +112,8 @@ li a:hover{
     text-align: center;
     background-color: #000000;
     padding: 10px;
+
+
 }
 
 
@@ -125,22 +136,31 @@ li a:hover{
     font-weight: bold;
 }
 
+.info p{
+    font-size: 1.1em;
+}
+
 .info hr{
     opacity: 0.5;
 }
 
 section{
-    padding: 10px;
     font-family: 'Inter', sans-serif;
+    padding-bottom: 50px;
 }
 
 .prix{
-    font-size: 25px;
+    font-size: 22px;
     font-weight: bold;
 }
 
 section img{
-    width: 150px;
+    width: 18vw;
+}
+
+.bouteille{
+    height: 30vh;
+    width: 10vw;
 }
 
 /* Arrière plan de mes sections*/
@@ -179,21 +199,19 @@ section img{
 
 .contact{
     width: 100%;
-    display: flex;
+    display: block;
     justify-content: space-between;
 }
 
 .bloc{
-    display: block;
+    display: flex;
 }
 
 .itineraire, .coordonnees{
     display: inline-block;
     width: 100%;
-}
-
-.itineraire{
-    padding-top: 70px;
+    margin-top: 50px;
+    margin-left: 40px;
 }
 
 
@@ -216,7 +234,6 @@ section img{
     text-align: center;
     background-color: #000000;
     padding: 10px;
-    margin-bottom: 20px;
     font-family: 'Parisienne', sans-serif;
 }
 
@@ -237,12 +254,26 @@ section img{
     color: black;
 }
 
+.reseau{
+    height: 10vh;
+    width: 5vw;
+    margin-top: 7px;
+    
+}
+
+.blocfooter{
+    margin: 0 50px;
+}
+
+ul{
+    padding-left: 0 !important;
+}
 
 
 
 /* Version téléphone*/
 
-@media (max-width :900px){
+@media (max-width :768px){
     .navbar{
         padding: 0;
     }
@@ -255,8 +286,27 @@ section img{
         backdrop-filter:  blur(8px);
         width:100%;
         height: 100vh;
-        display: flex;
+        display: none;
         flex-direction: column;
+    }
+    .nav-links.mobile-menu{
+        display: flex;
+    }
+
+    .article{
+        background-color:#D2B03D ;
+        margin: 50px;
+        display: block;
+        width: 50%;
+    }
+
+    section img{
+        width: 50vw;
+    }
+    
+    .bouteille{
+        height: 30vh;
+        width: 50vw;
     }
 
 
@@ -267,7 +317,13 @@ section img{
 
     .nav-links li a{
         color: black;
+
     }
+    .section1{
+        flex-direction: column;
+    }
+
+
 }
 
 
